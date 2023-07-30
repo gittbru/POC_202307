@@ -1,0 +1,14 @@
+{
+	"name": "DF-POC-FLOA",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "false"
+		}
+	},
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e2c62946-5284-46c6-a2b9-5ab106bb2e59",
+		"tenantId": "544fe47f-5772-488f-81a9-fa9de607ecfa"
+	}
+}
