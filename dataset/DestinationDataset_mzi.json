@@ -1,0 +1,20 @@
+{
+	"name": "DestinationDataset_mzi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Test",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "met_agenda",
+				"folderPath": "src_opendatabdx_met_agenda",
+				"container": "poc202307"
+			}
+		},
+		"schema": {}
+	}
+}
