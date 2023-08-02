@@ -1,0 +1,14 @@
+{
+	"name": "SourceDataset_mzi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "src_api_test_opendatabdx_met_agenda",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"requestMethod": "GET"
+		}
+	}
+}
