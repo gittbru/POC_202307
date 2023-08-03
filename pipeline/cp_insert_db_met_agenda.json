@@ -1,0 +1,308 @@
+{
+	"name": "cp_insert_db_met_agenda",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_cd4",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Destination",
+						"value": "dbo.met_agenda"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET"
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['records'][0]['datasetid']"
+								},
+								"sink": {
+									"name": "datasetid",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['recordid']"
+								},
+								"sink": {
+									"name": "recordid",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['longdescription_fr']"
+								},
+								"sink": {
+									"name": "longdescription_fr",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['accessibility_label_fr']"
+								},
+								"sink": {
+									"name": "accessibility_label_fr",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_name']"
+								},
+								"sink": {
+									"name": "location_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['age_max']"
+								},
+								"sink": {
+									"name": "age_max",
+									"type": "Byte"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['firstdate_end']"
+								},
+								"sink": {
+									"name": "firstdate_end",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['uid']"
+								},
+								"sink": {
+									"name": "uid",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_city']"
+								},
+								"sink": {
+									"name": "location_city",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_insee']"
+								},
+								"sink": {
+									"name": "location_insee",
+									"type": "Byte"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['slug']"
+								},
+								"sink": {
+									"name": "slug",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_department']"
+								},
+								"sink": {
+									"name": "location_department",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['lastdate_begin']"
+								},
+								"sink": {
+									"name": "lastdate_begin",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['conditions_fr']"
+								},
+								"sink": {
+									"name": "conditions_fr",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_postalcode']"
+								},
+								"sink": {
+									"name": "location_postalcode",
+									"type": "Byte"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_uid']"
+								},
+								"sink": {
+									"name": "location_uid",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['lastdate_end']"
+								},
+								"sink": {
+									"name": "lastdate_end",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['updatedat']"
+								},
+								"sink": {
+									"name": "updatedat",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['daterange_fr']"
+								},
+								"sink": {
+									"name": "daterange_fr",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['age_min']"
+								},
+								"sink": {
+									"name": "age_min",
+									"type": "Byte"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_countrycode']"
+								},
+								"sink": {
+									"name": "location_countrycode",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['title_fr']"
+								},
+								"sink": {
+									"name": "title_fr",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_address']"
+								},
+								"sink": {
+									"name": "location_address",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['keywords_fr']"
+								},
+								"sink": {
+									"name": "keywords_fr",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['description_fr']"
+								},
+								"sink": {
+									"name": "description_fr",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['originagenda_title']"
+								},
+								"sink": {
+									"name": "originagenda_title",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['location_region']"
+								},
+								"sink": {
+									"name": "location_region",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['records'][0]['fields']['firstdate_begin']"
+								},
+								"sink": {
+									"name": "firstdate_begin",
+									"type": "DateTime"
+								}
+							}
+						],
+						"collectionReference": "$['records']"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_cd4",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_cd4",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
