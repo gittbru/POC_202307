@@ -1,0 +1,197 @@
+{
+	"name": "DestinationDataset_cd4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "datasetid",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "recordid",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "longdescription_fr",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "accessibility_label_fr",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "location_name",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "age_max",
+				"type": "tinyint",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "location_address",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "keywords_fr",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "description_fr",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "originagenda_title",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "location_region",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "firstdate_begin",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "location_longitude",
+				"type": "real",
+				"precision": 24,
+				"scale": 0
+			},
+			{
+				"name": "updatedat",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "daterange_fr",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "age_min",
+				"type": "tinyint",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "location_countrycode",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "title_fr",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "lastdate_begin",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "conditions_fr",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "location_postalcode",
+				"type": "tinyint",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "location_uid",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "lastdate_end",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "location_latitude",
+				"type": "real",
+				"precision": 24,
+				"scale": 0
+			},
+			{
+				"name": "firstdate_end",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "uid",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "location_city",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "location_insee",
+				"type": "tinyint",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "slug",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "location_department",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "met_agenda"
+		}
+	}
+}
