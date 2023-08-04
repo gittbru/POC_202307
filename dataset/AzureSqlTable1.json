@@ -1,0 +1,41 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "log_id",
+				"type": "varchar"
+			},
+			{
+				"name": "job_id",
+				"type": "varchar"
+			},
+			{
+				"name": "criticite",
+				"type": "varchar"
+			},
+			{
+				"name": "msg_error_name",
+				"type": "varchar"
+			},
+			{
+				"name": "dt_error",
+				"type": "date"
+			},
+			{
+				"name": "TECH_DATE_INS",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tech_log"
+		}
+	}
+}
