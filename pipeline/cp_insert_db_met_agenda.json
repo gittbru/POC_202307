@@ -163,8 +163,7 @@
 									"path": "$['records'][0]['fields']['location_postalcode']"
 								},
 								"sink": {
-									"name": "location_postalcode",
-									"type": "Byte"
+									"name": "location_postalcode"
 								}
 							},
 							{
