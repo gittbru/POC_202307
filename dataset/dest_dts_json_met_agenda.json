@@ -1,5 +1,5 @@
 {
-	"name": "DestinationDataset_mzi",
+	"name": "dest_dts_json_met_agenda",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage_Test",
