@@ -1,5 +1,5 @@
 {
-	"name": "SourceDataset_mzi",
+	"name": "src_dts_api_odbdx_met_agenda2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "src_api_test_opendatabdx_met_agenda",
