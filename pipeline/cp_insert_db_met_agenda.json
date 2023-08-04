@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_cd4",
+				"name": "cp_insert_db_met_agenda",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -119,8 +119,7 @@
 									"path": "$['records'][0]['fields']['location_insee']"
 								},
 								"sink": {
-									"name": "location_insee",
-									"type": "Byte"
+									"name": "location_insee"
 								}
 							},
 							{
@@ -209,8 +208,7 @@
 									"path": "$['records'][0]['fields']['age_min']"
 								},
 								"sink": {
-									"name": "age_min",
-									"type": "Byte"
+									"name": "age_min"
 								}
 							},
 							{
@@ -291,13 +289,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceDataset_cd4",
+						"referenceName": "src_dts_api_odbdx_met_agenda",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_cd4",
+						"referenceName": "dest_dts_bdd_met_agenda",
 						"type": "DatasetReference"
 					}
 				]

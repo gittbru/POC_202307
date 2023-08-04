@@ -1,5 +1,5 @@
 {
-	"name": "SourceDataset_cd4",
+	"name": "src_dts_api_odbdx_met_agenda",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "src_api_test_opendatabdx_met_agenda",

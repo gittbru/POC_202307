@@ -1,5 +1,5 @@
 {
-	"name": "DestinationDataset_cd4",
+	"name": "dest_dts_bdd_met_agenda",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
