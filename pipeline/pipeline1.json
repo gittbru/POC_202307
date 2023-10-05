@@ -7,7 +7,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "TRUNCATE",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -197,7 +197,7 @@
 				]
 			},
 			{
-				"name": "Lookup1",
+				"name": "TRUNCATE",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -211,7 +211,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "TRUNCATE TABLE [dbo].[wrk_MiseEnGestion_01_DataBrut]",
+						"sqlReaderQuery": "TRUNCATE TABLE [dbo].[wrk_MiseEnGestion_01_DataBrut]\nSELECT COUNT(*) FROM [wrk_MiseEnGestion_01_DataBrut]",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
