@@ -1,0 +1,20 @@
+{
+	"name": "Json_Credit_Lines",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_py",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dts_MiseEnGestion_20230927_all.json",
+				"folderPath": "data_in",
+				"container": "json-test"
+			}
+		},
+		"schema": {}
+	}
+}
