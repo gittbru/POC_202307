@@ -53,14 +53,6 @@
 							},
 							{
 								"source": {
-									"path": "$['codeBaremeCR']"
-								},
-								"sink": {
-									"name": "CDL_CODE_BAREME_CR"
-								}
-							},
-							{
-								"source": {
 									"path": "$['persons'][0]['title']"
 								},
 								"sink": {
