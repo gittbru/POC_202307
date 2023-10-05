@@ -1,0 +1,129 @@
+{
+	"name": "SQLTab_WRK_MiseEnGestion_01_DataBrut",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CDL_REGISTRATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CDL_FINANCIAL_PRODUCT_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CDL_DEAL_SUBMIT_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CDL_FINANCIAL_PRODUCT_QUANTIEME",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "CDL_CREDIT_LIMIT",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 0
+			},
+			{
+				"name": "CDL_CODE_BAREME_CR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CDL_DEAL_NUMERO_FIDELITE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_REGISTRATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_TITLE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_FIRSTNAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_SECONDNAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_LASTNAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_ADDRESS1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_ADDRESS2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_COUNTRY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_CITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_NATIONALITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_BIRTH_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_BIRTH_PLACE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_BIRTH_COUNTRY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_BIRTH_ZIPCODE",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 0
+			},
+			{
+				"name": "PRS_CLI_PROFFESSION",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "PRS_CLI_MARITALSTATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRS_CLI_NB_DESCENDANTS",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "PRS_CLI_PARTNER_CODE_AGREEMENT",
+				"type": "decimal",
+				"precision": 7,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "wrk_MiseEnGestion_01_DataBrut"
+		}
+	}
+}

@@ -41,7 +41,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "SQLTab__Export_MiseEnGestion",
+						"referenceName": "SQLTab_WRK_MiseEnGestion_01_DataBrut",
 						"type": "DatasetReference"
 					}
 				]
