@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "SQLTab__Export_MiseEnGestion",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
@@ -9,33 +9,429 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "log_id",
-				"type": "varchar"
+				"name": "BDT-NUMAUT",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 0
 			},
 			{
-				"name": "job_id",
-				"type": "varchar"
+				"name": "FILLER1",
+				"type": "nvarchar"
 			},
 			{
-				"name": "criticite",
-				"type": "varchar"
+				"name": "BDT-SIGI",
+				"type": "nvarchar"
 			},
 			{
-				"name": "msg_error_name",
-				"type": "varchar"
+				"name": "BDT-ASTI",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 0
 			},
 			{
-				"name": "dt_error",
-				"type": "date"
+				"name": "BDT-NOMI",
+				"type": "nvarchar"
 			},
 			{
-				"name": "TECH_DATE_INS",
-				"type": "date"
+				"name": "FILLER2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-NOMJF",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-RUEI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-CPTTO",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 0
+			},
+			{
+				"name": "BDT-VILI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-CPAYS",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "FILLER4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-NATII",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-NAISO",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 0
+			},
+			{
+				"name": "BDT-LIENAI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DEPTO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-PROFI",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "FILLER6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-SITFI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-ENF",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "FILLER7",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-UTGAINS",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 0
+			},
+			{
+				"name": "FILLER8",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-VDROSOC",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "BDT-VDROAGR",
+				"type": "decimal",
+				"precision": 7,
+				"scale": 0
+			},
+			{
+				"name": "FILLER9",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-SDOS",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "BDT-PRODALP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DEVISE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-CNC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DSIGO",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 0
+			},
+			{
+				"name": "BDT-CMODECONTACT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-CMODTRANS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-QI",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "BDT-MODRI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DECO",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 0
+			},
+			{
+				"name": "BDT-CMODALCRE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-BARO",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "BDT-TAUXO",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "BDT-MENS",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 0
+			},
+			{
+				"name": "FILLER10",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-VERSCOMP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-MODFINA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DESTFINA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER11",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-REFPART",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER12",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-OPT-ASMSCRPT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-TARIF-ASMSCRPT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-MTFFAIT-ASMSCRPT",
+				"type": "decimal",
+				"precision": 7,
+				"scale": 1
+			},
+			{
+				"name": "FILLER13",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DOSCCO",
+				"type": "decimal",
+				"precision": 14,
+				"scale": 0
+			},
+			{
+				"name": "BDT-SOC-CARTE",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "FILLER14",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DURO",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "FILLER15",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-PERO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER16",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-IRRI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-SE-DMA",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 0
+			},
+			{
+				"name": "BDT-DEG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "FILLER17",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-BA-MTDEPOT",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 0
+			},
+			{
+				"name": "FILLER18",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-DECI-AFF",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-SE-CDECI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER19",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-TYPOUV",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-TYPETUD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER20",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-NUMAUT-DOSSIER-LIE",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 0
+			},
+			{
+				"name": "FILLER21",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-FRAISDOSS",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 0
+			},
+			{
+				"name": "FILLER22",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-NATA-EDIT",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 0
+			},
+			{
+				"name": "FILLER23",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-CBDF-TIT1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER24",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-PART-NUMDOS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-EMPRT-IDPART",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER25",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-EMPRT-NAISS-INSEE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FILLER26",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-CODE-BIC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-CODE-IBAN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-RUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BDT-RAPCONTRAT",
+				"type": "decimal",
+				"precision": 14,
+				"scale": 0
+			},
+			{
+				"name": "FILLER27",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ZCOLMSG1-TOP-SANS-CARTE",
+				"type": "nvarchar"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "tech_log"
+			"table": "exp_MiseEnGestion_Body"
 		}
 	}
 }
