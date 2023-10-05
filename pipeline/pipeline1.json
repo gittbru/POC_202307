@@ -53,14 +53,6 @@
 							},
 							{
 								"source": {
-									"path": "$['creditlimit']"
-								},
-								"sink": {
-									"name": "CDL_CREDIT_LIMIT"
-								}
-							},
-							{
-								"source": {
 									"path": "$['codeBaremeCR']"
 								},
 								"sink": {
