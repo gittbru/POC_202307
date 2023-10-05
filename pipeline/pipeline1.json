@@ -31,7 +31,156 @@
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['registration']"
+								},
+								"sink": {
+									"name": "CDL_REGISTRATION"
+								}
+							},
+							{
+								"source": {
+									"path": "$['financialProduct']"
+								},
+								"sink": {
+									"name": "CDL_FINANCIAL_PRODUCT_CODE"
+								}
+							},
+							{
+								"source": {
+									"path": "$['creditlimit']"
+								},
+								"sink": {
+									"name": "CDL_CREDIT_LIMIT"
+								}
+							},
+							{
+								"source": {
+									"path": "$['codeBaremeCR']"
+								},
+								"sink": {
+									"name": "CDL_CODE_BAREME_CR"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['title']"
+								},
+								"sink": {
+									"name": "PRS_CLI_TITLE"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['firstName']"
+								},
+								"sink": {
+									"name": "PRS_CLI_FIRSTNAME"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['lastName']"
+								},
+								"sink": {
+									"name": "PRS_CLI_LASTNAME"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['addresses'][0]['address1']"
+								},
+								"sink": {
+									"name": "PRS_CLI_ADDRESS1"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['addresses'][0]['address2']"
+								},
+								"sink": {
+									"name": "PRS_CLI_ADDRESS2"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['addresses'][0]['city']"
+								},
+								"sink": {
+									"name": "PRS_CLI_CITY"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['addresses'][0]['country']"
+								},
+								"sink": {
+									"name": "PRS_CLI_COUNTRY"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['nationality']"
+								},
+								"sink": {
+									"name": "PRS_CLI_NATIONALITY"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['birthDate']['$date']"
+								},
+								"sink": {
+									"name": "PRS_CLI_BIRTH_DATE"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['birthPlace']"
+								},
+								"sink": {
+									"name": "PRS_CLI_BIRTH_PLACE"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['birthZipcode']"
+								},
+								"sink": {
+									"name": "PRS_CLI_BIRTH_ZIPCODE"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['birthCountry']"
+								},
+								"sink": {
+									"name": "PRS_CLI_BIRTH_COUNTRY"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['familyMaritalStatus']"
+								},
+								"sink": {
+									"name": "PRS_CLI_MARITALSTATUS"
+								}
+							},
+							{
+								"source": {
+									"path": "$['persons'][0]['personRegistration']"
+								},
+								"sink": {
+									"name": "PRS_CLI_REGISTRATION"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
