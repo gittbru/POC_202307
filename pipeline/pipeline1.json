@@ -32,6 +32,22 @@
 						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"validateDataConsistency": false,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Info",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "AzureBlobStorage_py",
+								"type": "LinkedServiceReference"
+							},
+							"path": "json-test/data_in"
+						}
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
@@ -81,14 +97,6 @@
 								},
 								"sink": {
 									"name": "PRS_CLI_ADDRESS1"
-								}
-							},
-							{
-								"source": {
-									"path": "$['persons'][0]['addresses'][0]['address2']"
-								},
-								"sink": {
-									"name": "PRS_CLI_ADDRESS2"
 								}
 							},
 							{
