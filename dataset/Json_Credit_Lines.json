@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "dts_MiseEnGestion_20230927_all.json",
+				"fileName": "dts_MiseEnGestion_20230927.json",
 				"folderPath": "data_in",
 				"container": "json-test"
 			}
